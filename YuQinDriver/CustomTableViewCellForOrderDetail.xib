@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCellIdentifierForOrderDetail" rowHeight="56" id="G5w-nP-l9K" customClass="CustomForDoingOrderTableViewCell" customModule="YuQinDriver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G5w-nP-l9K" id="Rc5-w4-L8U">
+                <frame key="frameInset" width="391" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exu-fU-BLW">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fC-hG-jbI">
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycw-MM-AAV">
+                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                        <state key="normal" image="BtnCall"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="exu-fU-BLW" firstAttribute="leading" secondItem="Rc5-w4-L8U" secondAttribute="leadingMargin" id="3PA-m2-6G7"/>
+                    <constraint firstItem="exu-fU-BLW" firstAttribute="top" secondItem="Rc5-w4-L8U" secondAttribute="topMargin" id="Kvq-1W-UIA"/>
+                    <constraint firstItem="9fC-hG-jbI" firstAttribute="leading" secondItem="Rc5-w4-L8U" secondAttribute="leadingMargin" id="LtU-Lb-FT2"/>
+                    <constraint firstItem="9fC-hG-jbI" firstAttribute="top" secondItem="exu-fU-BLW" secondAttribute="bottom" constant="8" id="Uq3-FP-ZXt"/>
+                    <constraint firstItem="ycw-MM-AAV" firstAttribute="centerY" secondItem="9fC-hG-jbI" secondAttribute="centerY" id="nxJ-4N-pZM"/>
+                    <constraint firstItem="ycw-MM-AAV" firstAttribute="leading" secondItem="9fC-hG-jbI" secondAttribute="trailing" constant="10" id="opm-1L-b7U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button1" destination="ycw-MM-AAV" id="lOu-zp-AhA"/>
+                <outlet property="label1" destination="exu-fU-BLW" id="WdC-ou-Wjc"/>
+                <outlet property="label2" destination="9fC-hG-jbI" id="IBy-6N-Lmu"/>
+            </connections>
+            <point key="canvasLocation" x="363.5" y="493"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BtnCall" width="22" height="22"/>
+    </resources>
+</document>

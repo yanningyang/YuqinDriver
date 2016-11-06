@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		395C564EFB5F34942809C7CF /* Pods_YuQinDriver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537B2D802CFE1CD3F9DF5330 /* Pods_YuQinDriver.framework */; };
+		C948250A1DC0E20200B4782B /* ChooseCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94825091DC0E20200B4782B /* ChooseCompanyViewController.swift */; };
+		C948250C1DC1888B00B4782B /* UrlConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948250B1DC1888B00B4782B /* UrlConnection.swift */; };
+		C948D5AE1CAE31AB001CE8AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5AD1CAE31AB001CE8AC /* AppDelegate.swift */; };
+		C948D5B31CAE31AB001CE8AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C948D5B11CAE31AB001CE8AC /* Main.storyboard */; };
+		C948D5B51CAE31AB001CE8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C948D5B41CAE31AB001CE8AC /* Assets.xcassets */; };
+		C948D5C31CAE31AB001CE8AC /* YuQinDriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5C21CAE31AB001CE8AC /* YuQinDriverTests.swift */; };
+		C948D5CE1CAE31AB001CE8AC /* YuQinDriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5CD1CAE31AB001CE8AC /* YuQinDriverUITests.swift */; };
+		C948D5DE1CAE34D5001CE8AC /* DoingOrderDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5DB1CAE34D5001CE8AC /* DoingOrderDAO.swift */; };
+		C948D5DF1CAE34D5001CE8AC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5DC1CAE34D5001CE8AC /* Order.swift */; };
+		C948D5E01CAE34D5001CE8AC /* TodoOrderDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5DD1CAE34D5001CE8AC /* TodoOrderDAO.swift */; };
+		C948D5E61CAE3554001CE8AC /* DoingOrderBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5E41CAE3554001CE8AC /* DoingOrderBL.swift */; };
+		C948D5E71CAE3554001CE8AC /* TodoOrderBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5E51CAE3554001CE8AC /* TodoOrderBL.swift */; };
+		C948D5F51CAE35E1001CE8AC /* AboutmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5E91CAE35E1001CE8AC /* AboutmeViewController.swift */; };
+		C948D5F61CAE35E1001CE8AC /* ChangeContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5EA1CAE35E1001CE8AC /* ChangeContactViewController.swift */; };
+		C948D5F71CAE35E1001CE8AC /* ChangePwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5EB1CAE35E1001CE8AC /* ChangePwdViewController.swift */; };
+		C948D5F81CAE35E1001CE8AC /* DoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5EC1CAE35E1001CE8AC /* DoingViewController.swift */; };
+		C948D5F91CAE35E1001CE8AC /* DoneDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5ED1CAE35E1001CE8AC /* DoneDetailViewController.swift */; };
+		C948D5FA1CAE35E1001CE8AC /* DoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5EE1CAE35E1001CE8AC /* DoneTableViewController.swift */; };
+		C948D5FB1CAE35E1001CE8AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5EF1CAE35E1001CE8AC /* HomeViewController.swift */; };
+		C948D5FC1CAE35E1001CE8AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5F01CAE35E1001CE8AC /* LoginViewController.swift */; };
+		C948D5FD1CAE35E1001CE8AC /* RecommendRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5F11CAE35E1001CE8AC /* RecommendRouteViewController.swift */; };
+		C948D5FE1CAE35E1001CE8AC /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5F21CAE35E1001CE8AC /* SignatureViewController.swift */; };
+		C948D5FF1CAE35E1001CE8AC /* WilldoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5F31CAE35E1001CE8AC /* WilldoDetailViewController.swift */; };
+		C948D6001CAE35E1001CE8AC /* WilldoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D5F41CAE35E1001CE8AC /* WilldoTableViewController.swift */; };
+		C948D6061CAE3629001CE8AC /* CustomForDoingOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D6021CAE3629001CE8AC /* CustomForDoingOrderTableViewCell.swift */; };
+		C948D6071CAE3629001CE8AC /* CustomForDoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D6031CAE3629001CE8AC /* CustomForDoneTableViewCell.swift */; };
+		C948D6081CAE3629001CE8AC /* CustomHeaderViewForDoneTableViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D6041CAE3629001CE8AC /* CustomHeaderViewForDoneTableViewTableViewCell.swift */; };
+		C948D6091CAE3629001CE8AC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D6051CAE3629001CE8AC /* CustomTableViewCell.swift */; };
+		C948D6101CAE3659001CE8AC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D60B1CAE3659001CE8AC /* Constant.swift */; };
+		C948D6111CAE3659001CE8AC /* RegExHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D60C1CAE3659001CE8AC /* RegExHelper.swift */; };
+		C948D6121CAE3659001CE8AC /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D60D1CAE3659001CE8AC /* UIColor+Hex.swift */; };
+		C948D6131CAE3659001CE8AC /* UpdateInfoXmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D60E1CAE3659001CE8AC /* UpdateInfoXmlParser.swift */; };
+		C948D6141CAE3659001CE8AC /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D60F1CAE3659001CE8AC /* Utility.swift */; };
+		C948D6181CAE3695001CE8AC /* CustomTableViewCellForOrderDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = C948D6171CAE3695001CE8AC /* CustomTableViewCellForOrderDetail.xib */; };
+		C948D61D1CAE5366001CE8AC /* IBDesignableOnePixelConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C948D61C1CAE5366001CE8AC /* IBDesignableOnePixelConstant.swift */; };
+		C95F1B8A1D7A6BFE002A15FA /* OtherExpenditureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95F1B891D7A6BFE002A15FA /* OtherExpenditureViewController.swift */; };
+		C968985C1D7D1813009DF22B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C968985B1D7D1813009DF22B /* LaunchScreen.storyboard */; };
+		C971641C1CB8F7BD00437242 /* UITools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971641B1CB8F7BD00437242 /* UITools.swift */; };
+		C97164271CBB6BDE00437242 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C97164261CBB6BDE00437242 /* Reachability.m */; };
+		C971642A1CBBD83E00437242 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97164291CBBD83E00437242 /* NotificationCenterViewController.swift */; };
+		C971642C1CBBDFD100437242 /* NotificationBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971642B1CBBDFD100437242 /* NotificationBL.swift */; };
+		C971642E1CBBE09000437242 /* NotificationDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971642D1CBBE09000437242 /* NotificationDAO.swift */; };
+		C97164301CBBE2F800437242 /* OrderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971642F1CBBE2F800437242 /* OrderNotification.swift */; };
+		C97164321CBBF1E800437242 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97164311CBBF1E800437242 /* NotificationTableViewCell.swift */; };
+		C975CF2C1CC8B9410045B16C /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C975CF2B1CC8B9410045B16C /* String+MD5.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C948D5BF1CAE31AB001CE8AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C948D5A21CAE31AA001CE8AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C948D5A91CAE31AB001CE8AC;
+			remoteInfo = YuQinDriver;
+		};
+		C948D5CA1CAE31AB001CE8AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C948D5A21CAE31AA001CE8AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C948D5A91CAE31AB001CE8AC;
+			remoteInfo = YuQinDriver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33BFB9A919404C259C2DF56C /* Pods-YuQinDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuQinDriver.release.xcconfig"; path = "Pods/Target Support Files/Pods-YuQinDriver/Pods-YuQinDriver.release.xcconfig"; sourceTree = "<group>"; };
+		537B2D802CFE1CD3F9DF5330 /* Pods_YuQinDriver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YuQinDriver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D402C6121256030A7CA729B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC19D55C76074F1E619F442 /* Pods-YuQinDriver.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuQinDriver.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-YuQinDriver/Pods-YuQinDriver.distribution.xcconfig"; sourceTree = "<group>"; };
+		9E9750B4B23EC2AF374D3CF1 /* Pods-YuQinDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuQinDriver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YuQinDriver/Pods-YuQinDriver.debug.xcconfig"; sourceTree = "<group>"; };
+		C94825091DC0E20200B4782B /* ChooseCompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCompanyViewController.swift; sourceTree = "<group>"; };
+		C948250B1DC1888B00B4782B /* UrlConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlConnection.swift; sourceTree = "<group>"; };
+		C948D5AA1CAE31AB001CE8AC /* YuQinDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuQinDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C948D5AD1CAE31AB001CE8AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C948D5B21CAE31AB001CE8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C948D5B41CAE31AB001CE8AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C948D5B91CAE31AB001CE8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C948D5BE1CAE31AB001CE8AC /* YuQinDriverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuQinDriverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C948D5C21CAE31AB001CE8AC /* YuQinDriverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuQinDriverTests.swift; sourceTree = "<group>"; };
+		C948D5C41CAE31AB001CE8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C948D5C91CAE31AB001CE8AC /* YuQinDriverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuQinDriverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C948D5CD1CAE31AB001CE8AC /* YuQinDriverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuQinDriverUITests.swift; sourceTree = "<group>"; };
+		C948D5CF1CAE31AB001CE8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C948D5DB1CAE34D5001CE8AC /* DoingOrderDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoingOrderDAO.swift; sourceTree = "<group>"; };
+		C948D5DC1CAE34D5001CE8AC /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		C948D5DD1CAE34D5001CE8AC /* TodoOrderDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoOrderDAO.swift; sourceTree = "<group>"; };
+		C948D5E41CAE3554001CE8AC /* DoingOrderBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoingOrderBL.swift; sourceTree = "<group>"; };
+		C948D5E51CAE3554001CE8AC /* TodoOrderBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoOrderBL.swift; sourceTree = "<group>"; };
+		C948D5E91CAE35E1001CE8AC /* AboutmeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutmeViewController.swift; sourceTree = "<group>"; };
+		C948D5EA1CAE35E1001CE8AC /* ChangeContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeContactViewController.swift; sourceTree = "<group>"; };
+		C948D5EB1CAE35E1001CE8AC /* ChangePwdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePwdViewController.swift; sourceTree = "<group>"; };
+		C948D5EC1CAE35E1001CE8AC /* DoingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoingViewController.swift; sourceTree = "<group>"; };
+		C948D5ED1CAE35E1001CE8AC /* DoneDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneDetailViewController.swift; sourceTree = "<group>"; };
+		C948D5EE1CAE35E1001CE8AC /* DoneTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneTableViewController.swift; sourceTree = "<group>"; };
+		C948D5EF1CAE35E1001CE8AC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C948D5F01CAE35E1001CE8AC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C948D5F11CAE35E1001CE8AC /* RecommendRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendRouteViewController.swift; sourceTree = "<group>"; };
+		C948D5F21CAE35E1001CE8AC /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		C948D5F31CAE35E1001CE8AC /* WilldoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WilldoDetailViewController.swift; sourceTree = "<group>"; };
+		C948D5F41CAE35E1001CE8AC /* WilldoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WilldoTableViewController.swift; sourceTree = "<group>"; };
+		C948D6021CAE3629001CE8AC /* CustomForDoingOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomForDoingOrderTableViewCell.swift; sourceTree = "<group>"; };
+		C948D6031CAE3629001CE8AC /* CustomForDoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomForDoneTableViewCell.swift; sourceTree = "<group>"; };
+		C948D6041CAE3629001CE8AC /* CustomHeaderViewForDoneTableViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderViewForDoneTableViewTableViewCell.swift; sourceTree = "<group>"; };
+		C948D6051CAE3629001CE8AC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		C948D60B1CAE3659001CE8AC /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		C948D60C1CAE3659001CE8AC /* RegExHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegExHelper.swift; sourceTree = "<group>"; };
+		C948D60D1CAE3659001CE8AC /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		C948D60E1CAE3659001CE8AC /* UpdateInfoXmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateInfoXmlParser.swift; sourceTree = "<group>"; };
+		C948D60F1CAE3659001CE8AC /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		C948D6171CAE3695001CE8AC /* CustomTableViewCellForOrderDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCellForOrderDetail.xib; sourceTree = "<group>"; };
+		C948D61A1CAE36CD001CE8AC /* YuQinDriver-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YuQinDriver-Bridging-Header.h"; sourceTree = "<group>"; };
+		C948D61C1CAE5366001CE8AC /* IBDesignableOnePixelConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesignableOnePixelConstant.swift; sourceTree = "<group>"; };
+		C95F1B891D7A6BFE002A15FA /* OtherExpenditureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherExpenditureViewController.swift; sourceTree = "<group>"; };
+		C968985B1D7D1813009DF22B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C971641B1CB8F7BD00437242 /* UITools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITools.swift; sourceTree = "<group>"; };
+		C97164251CBB6BDE00437242 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C97164261CBB6BDE00437242 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		C97164291CBBD83E00437242 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
+		C971642B1CBBDFD100437242 /* NotificationBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationBL.swift; sourceTree = "<group>"; };
+		C971642D1CBBE09000437242 /* NotificationDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDAO.swift; sourceTree = "<group>"; };
+		C971642F1CBBE2F800437242 /* OrderNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderNotification.swift; sourceTree = "<group>"; };
+		C97164311CBBF1E800437242 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		C975CF2B1CC8B9410045B16C /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C948D5A71CAE31AB001CE8AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395C564EFB5F34942809C7CF /* Pods_YuQinDriver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C948D5BB1CAE31AB001CE8AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C948D5C61CAE31AB001CE8AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2447EAA7276C4583B0AB548C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E9750B4B23EC2AF374D3CF1 /* Pods-YuQinDriver.debug.xcconfig */,
+				33BFB9A919404C259C2DF56C /* Pods-YuQinDriver.release.xcconfig */,
+				7BC19D55C76074F1E619F442 /* Pods-YuQinDriver.distribution.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		53E79B8890BEBAE5F0338FAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D402C6121256030A7CA729B /* Pods.framework */,
+				537B2D802CFE1CD3F9DF5330 /* Pods_YuQinDriver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C948D5A11CAE31AA001CE8AC = {
+			isa = PBXGroup;
+			children = (
+				C948D5AC1CAE31AB001CE8AC /* YuQinDriver */,
+				C948D5C11CAE31AB001CE8AC /* YuQinDriverTests */,
+				C948D5CC1CAE31AB001CE8AC /* YuQinDriverUITests */,
+				C948D5AB1CAE31AB001CE8AC /* Products */,
+				53E79B8890BEBAE5F0338FAD /* Frameworks */,
+				2447EAA7276C4583B0AB548C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C948D5AB1CAE31AB001CE8AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C948D5AA1CAE31AB001CE8AC /* YuQinDriver.app */,
+				C948D5BE1CAE31AB001CE8AC /* YuQinDriverTests.xctest */,
+				C948D5C91CAE31AB001CE8AC /* YuQinDriverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C948D5AC1CAE31AB001CE8AC /* YuQinDriver */ = {
+			isa = PBXGroup;
+			children = (
+				C97164281CBB6C4700437242 /* Reachability */,
+				C948D5E81CAE3561001CE8AC /* BusinessLogicLayer */,
+				C948D5E31CAE3503001CE8AC /* PersistenceLayer */,
+				C948D6161CAE366B001CE8AC /* Extension */,
+				C948D6151CAE3662001CE8AC /* Util */,
+				C948D61B1CAE3751001CE8AC /* Xib */,
+				C948D60A1CAE3631001CE8AC /* View */,
+				C948D6011CAE35EB001CE8AC /* ViewController */,
+				C948D5AD1CAE31AB001CE8AC /* AppDelegate.swift */,
+				C948D5B11CAE31AB001CE8AC /* Main.storyboard */,
+				C948D5B41CAE31AB001CE8AC /* Assets.xcassets */,
+				C948D5B91CAE31AB001CE8AC /* Info.plist */,
+				C948D61A1CAE36CD001CE8AC /* YuQinDriver-Bridging-Header.h */,
+				C968985B1D7D1813009DF22B /* LaunchScreen.storyboard */,
+			);
+			path = YuQinDriver;
+			sourceTree = "<group>";
+		};
+		C948D5C11CAE31AB001CE8AC /* YuQinDriverTests */ = {
+			isa = PBXGroup;
+			children = (
+				C948D5C21CAE31AB001CE8AC /* YuQinDriverTests.swift */,
+				C948D5C41CAE31AB001CE8AC /* Info.plist */,
+			);
+			path = YuQinDriverTests;
+			sourceTree = "<group>";
+		};
+		C948D5CC1CAE31AB001CE8AC /* YuQinDriverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C948D5CD1CAE31AB001CE8AC /* YuQinDriverUITests.swift */,
+				C948D5CF1CAE31AB001CE8AC /* Info.plist */,
+			);
+			path = YuQinDriverUITests;
+			sourceTree = "<group>";
+		};
+		C948D5E11CAE34DE001CE8AC /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				C948D5DB1CAE34D5001CE8AC /* DoingOrderDAO.swift */,
+				C948D5DD1CAE34D5001CE8AC /* TodoOrderDAO.swift */,
+				C971642D1CBBE09000437242 /* NotificationDAO.swift */,
+			);
+			name = dao;
+			sourceTree = "<group>";
+		};
+		C948D5E21CAE34EC001CE8AC /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				C948D5DC1CAE34D5001CE8AC /* Order.swift */,
+				C971642F1CBBE2F800437242 /* OrderNotification.swift */,
+			);
+			name = domain;
+			sourceTree = "<group>";
+		};
+		C948D5E31CAE3503001CE8AC /* PersistenceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C948D5E11CAE34DE001CE8AC /* dao */,
+				C948D5E21CAE34EC001CE8AC /* domain */,
+			);
+			name = PersistenceLayer;
+			sourceTree = "<group>";
+		};
+		C948D5E81CAE3561001CE8AC /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C948D5E41CAE3554001CE8AC /* DoingOrderBL.swift */,
+				C948D5E51CAE3554001CE8AC /* TodoOrderBL.swift */,
+				C971642B1CBBDFD100437242 /* NotificationBL.swift */,
+			);
+			name = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		C948D6011CAE35EB001CE8AC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C948D5F01CAE35E1001CE8AC /* LoginViewController.swift */,
+				C948D5EF1CAE35E1001CE8AC /* HomeViewController.swift */,
+				C948D5EC1CAE35E1001CE8AC /* DoingViewController.swift */,
+				C948D5F11CAE35E1001CE8AC /* RecommendRouteViewController.swift */,
+				C948D5F21CAE35E1001CE8AC /* SignatureViewController.swift */,
+				C948D5F41CAE35E1001CE8AC /* WilldoTableViewController.swift */,
+				C948D5F31CAE35E1001CE8AC /* WilldoDetailViewController.swift */,
+				C948D5EE1CAE35E1001CE8AC /* DoneTableViewController.swift */,
+				C948D5ED1CAE35E1001CE8AC /* DoneDetailViewController.swift */,
+				C948D5E91CAE35E1001CE8AC /* AboutmeViewController.swift */,
+				C948D5EA1CAE35E1001CE8AC /* ChangeContactViewController.swift */,
+				C948D5EB1CAE35E1001CE8AC /* ChangePwdViewController.swift */,
+				C97164291CBBD83E00437242 /* NotificationCenterViewController.swift */,
+				C95F1B891D7A6BFE002A15FA /* OtherExpenditureViewController.swift */,
+				C94825091DC0E20200B4782B /* ChooseCompanyViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		C948D60A1CAE3631001CE8AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C948D6021CAE3629001CE8AC /* CustomForDoingOrderTableViewCell.swift */,
+				C948D6031CAE3629001CE8AC /* CustomForDoneTableViewCell.swift */,
+				C948D6041CAE3629001CE8AC /* CustomHeaderViewForDoneTableViewTableViewCell.swift */,
+				C948D6051CAE3629001CE8AC /* CustomTableViewCell.swift */,
+				C97164311CBBF1E800437242 /* NotificationTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C948D6151CAE3662001CE8AC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C948D61C1CAE5366001CE8AC /* IBDesignableOnePixelConstant.swift */,
+				C948D60B1CAE3659001CE8AC /* Constant.swift */,
+				C948D60C1CAE3659001CE8AC /* RegExHelper.swift */,
+				C948D60E1CAE3659001CE8AC /* UpdateInfoXmlParser.swift */,
+				C948D60F1CAE3659001CE8AC /* Utility.swift */,
+				C971641B1CB8F7BD00437242 /* UITools.swift */,
+				C948250B1DC1888B00B4782B /* UrlConnection.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		C948D6161CAE366B001CE8AC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C948D60D1CAE3659001CE8AC /* UIColor+Hex.swift */,
+				C975CF2B1CC8B9410045B16C /* String+MD5.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		C948D61B1CAE3751001CE8AC /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				C948D6171CAE3695001CE8AC /* CustomTableViewCellForOrderDetail.xib */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
+		C97164281CBB6C4700437242 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				C97164251CBB6BDE00437242 /* Reachability.h */,
+				C97164261CBB6BDE00437242 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C948D5A91CAE31AB001CE8AC /* YuQinDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C948D5D21CAE31AB001CE8AC /* Build configuration list for PBXNativeTarget "YuQinDriver" */;
+			buildPhases = (
+				02B0872C2961673AAAE17FF7 /* [CP] Check Pods Manifest.lock */,
+				C948D5A61CAE31AB001CE8AC /* Sources */,
+				C948D5A71CAE31AB001CE8AC /* Frameworks */,
+				C948D5A81CAE31AB001CE8AC /* Resources */,
+				323E7A0E30BBA11DF8CF50B5 /* [CP] Embed Pods Frameworks */,
+				9A3B20EC5D7F0886041D75D1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YuQinDriver;
+			productName = YuQinDriver;
+			productReference = C948D5AA1CAE31AB001CE8AC /* YuQinDriver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C948D5BD1CAE31AB001CE8AC /* YuQinDriverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C948D5D51CAE31AB001CE8AC /* Build configuration list for PBXNativeTarget "YuQinDriverTests" */;
+			buildPhases = (
+				C948D5BA1CAE31AB001CE8AC /* Sources */,
+				C948D5BB1CAE31AB001CE8AC /* Frameworks */,
+				C948D5BC1CAE31AB001CE8AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C948D5C01CAE31AB001CE8AC /* PBXTargetDependency */,
+			);
+			name = YuQinDriverTests;
+			productName = YuQinDriverTests;
+			productReference = C948D5BE1CAE31AB001CE8AC /* YuQinDriverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C948D5C81CAE31AB001CE8AC /* YuQinDriverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C948D5D81CAE31AB001CE8AC /* Build configuration list for PBXNativeTarget "YuQinDriverUITests" */;
+			buildPhases = (
+				C948D5C51CAE31AB001CE8AC /* Sources */,
+				C948D5C61CAE31AB001CE8AC /* Frameworks */,
+				C948D5C71CAE31AB001CE8AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C948D5CB1CAE31AB001CE8AC /* PBXTargetDependency */,
+			);
+			name = YuQinDriverUITests;
+			productName = YuQinDriverUITests;
+			productReference = C948D5C91CAE31AB001CE8AC /* YuQinDriverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C948D5A21CAE31AA001CE8AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = YuQin;
+				TargetAttributes = {
+					C948D5A91CAE31AB001CE8AC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SA3PMJF59D;
+						LastSwiftMigration = 0800;
+					};
+					C948D5BD1CAE31AB001CE8AC = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
+						TestTargetID = C948D5A91CAE31AB001CE8AC;
+					};
+					C948D5C81CAE31AB001CE8AC = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
+						TestTargetID = C948D5A91CAE31AB001CE8AC;
+					};
+				};
+			};
+			buildConfigurationList = C948D5A51CAE31AA001CE8AC /* Build configuration list for PBXProject "YuQinDriver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C948D5A11CAE31AA001CE8AC;
+			productRefGroup = C948D5AB1CAE31AB001CE8AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C948D5A91CAE31AB001CE8AC /* YuQinDriver */,
+				C948D5BD1CAE31AB001CE8AC /* YuQinDriverTests */,
+				C948D5C81CAE31AB001CE8AC /* YuQinDriverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C948D5A81CAE31AB001CE8AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C948D5B51CAE31AB001CE8AC /* Assets.xcassets in Resources */,
+				C948D6181CAE3695001CE8AC /* CustomTableViewCellForOrderDetail.xib in Resources */,
+				C968985C1D7D1813009DF22B /* LaunchScreen.storyboard in Resources */,
+				C948D5B31CAE31AB001CE8AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C948D5BC1CAE31AB001CE8AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C948D5C71CAE31AB001CE8AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02B0872C2961673AAAE17FF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		323E7A0E30BBA11DF8CF50B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YuQinDriver/Pods-YuQinDriver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A3B20EC5D7F0886041D75D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YuQinDriver/Pods-YuQinDriver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C948D5A61CAE31AB001CE8AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C948D6071CAE3629001CE8AC /* CustomForDoneTableViewCell.swift in Sources */,
+				C948D5FD1CAE35E1001CE8AC /* RecommendRouteViewController.swift in Sources */,
+				C948D6091CAE3629001CE8AC /* CustomTableViewCell.swift in Sources */,
+				C975CF2C1CC8B9410045B16C /* String+MD5.swift in Sources */,
+				C948D5FC1CAE35E1001CE8AC /* LoginViewController.swift in Sources */,
+				C971642C1CBBDFD100437242 /* NotificationBL.swift in Sources */,
+				C97164271CBB6BDE00437242 /* Reachability.m in Sources */,
+				C948D5DF1CAE34D5001CE8AC /* Order.swift in Sources */,
+				C948D5F71CAE35E1001CE8AC /* ChangePwdViewController.swift in Sources */,
+				C948D5E61CAE3554001CE8AC /* DoingOrderBL.swift in Sources */,
+				C97164301CBBE2F800437242 /* OrderNotification.swift in Sources */,
+				C948D6111CAE3659001CE8AC /* RegExHelper.swift in Sources */,
+				C948D5FF1CAE35E1001CE8AC /* WilldoDetailViewController.swift in Sources */,
+				C948D5AE1CAE31AB001CE8AC /* AppDelegate.swift in Sources */,
+				C95F1B8A1D7A6BFE002A15FA /* OtherExpenditureViewController.swift in Sources */,
+				C948D5DE1CAE34D5001CE8AC /* DoingOrderDAO.swift in Sources */,
+				C948250C1DC1888B00B4782B /* UrlConnection.swift in Sources */,
+				C948D6131CAE3659001CE8AC /* UpdateInfoXmlParser.swift in Sources */,
+				C948D6101CAE3659001CE8AC /* Constant.swift in Sources */,
+				C971641C1CB8F7BD00437242 /* UITools.swift in Sources */,
+				C948D6001CAE35E1001CE8AC /* WilldoTableViewController.swift in Sources */,
+				C948D5FA1CAE35E1001CE8AC /* DoneTableViewController.swift in Sources */,
+				C948D5F51CAE35E1001CE8AC /* AboutmeViewController.swift in Sources */,
+				C948D5FE1CAE35E1001CE8AC /* SignatureViewController.swift in Sources */,
+				C97164321CBBF1E800437242 /* NotificationTableViewCell.swift in Sources */,
+				C948D5F91CAE35E1001CE8AC /* DoneDetailViewController.swift in Sources */,
+				C948D5E71CAE3554001CE8AC /* TodoOrderBL.swift in Sources */,
+				C948D6061CAE3629001CE8AC /* CustomForDoingOrderTableViewCell.swift in Sources */,
+				C948D61D1CAE5366001CE8AC /* IBDesignableOnePixelConstant.swift in Sources */,
+				C948D6141CAE3659001CE8AC /* Utility.swift in Sources */,
+				C948D6121CAE3659001CE8AC /* UIColor+Hex.swift in Sources */,
+				C948D5E01CAE34D5001CE8AC /* TodoOrderDAO.swift in Sources */,
+				C948D5F81CAE35E1001CE8AC /* DoingViewController.swift in Sources */,
+				C948D5FB1CAE35E1001CE8AC /* HomeViewController.swift in Sources */,
+				C971642E1CBBE09000437242 /* NotificationDAO.swift in Sources */,
+				C971642A1CBBD83E00437242 /* NotificationCenterViewController.swift in Sources */,
+				C948D6081CAE3629001CE8AC /* CustomHeaderViewForDoneTableViewTableViewCell.swift in Sources */,
+				C948D5F61CAE35E1001CE8AC /* ChangeContactViewController.swift in Sources */,
+				C948250A1DC0E20200B4782B /* ChooseCompanyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C948D5BA1CAE31AB001CE8AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C948D5C31CAE31AB001CE8AC /* YuQinDriverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C948D5C51CAE31AB001CE8AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C948D5CE1CAE31AB001CE8AC /* YuQinDriverUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C948D5C01CAE31AB001CE8AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C948D5A91CAE31AB001CE8AC /* YuQinDriver */;
+			targetProxy = C948D5BF1CAE31AB001CE8AC /* PBXContainerItemProxy */;
+		};
+		C948D5CB1CAE31AB001CE8AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C948D5A91CAE31AB001CE8AC /* YuQinDriver */;
+			targetProxy = C948D5CA1CAE31AB001CE8AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C948D5B11CAE31AB001CE8AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C948D5B21CAE31AB001CE8AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C91AEC961D7929F6008892ED /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hengxin Chen (SA3PMJF59D)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 2.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		C91AEC971D7929F6008892ED /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC19D55C76074F1E619F442 /* Pods-YuQinDriver.distribution.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hengxin Chen (SA3PMJF59D)";
+				DEVELOPMENT_TEAM = SA3PMJF59D;
+				INFOPLIST_FILE = YuQinDriver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuqin.YuQinDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5586a977-fec9-46a3-b869-227c1238275e";
+				PROVISIONING_PROFILE_SPECIFIER = "YuQinDriver-Distribution";
+				SWIFT_OBJC_BRIDGING_HEADER = "YuQinDriver/YuQinDriver-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Distribution;
+		};
+		C91AEC981D7929F6008892ED /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YuQinDriverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuqin.YuQinDriverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YuQinDriver.app/YuQinDriver";
+			};
+			name = Distribution;
+		};
+		C91AEC991D7929F6008892ED /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YuQinDriverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuqin.YuQinDriverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = YuQinDriver;
+			};
+			name = Distribution;
+		};
+		C948D5D01CAE31AB001CE8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hengxin Chen (4Z87G7B2U8)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		C948D5D11CAE31AB001CE8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hengxin Chen (SA3PMJF59D)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C948D5D31CAE31AB001CE8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E9750B4B23EC2AF374D3CF1 /* Pods-YuQinDriver.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hengxin Chen (4Z87G7B2U8)";
+				INFOPLIST_FILE = YuQinDriver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuqin.YuQinDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0f21c456-2dfa-4789-9fa3-0a005484b09c";
+				SWIFT_OBJC_BRIDGING_HEADER = "YuQinDriver/YuQinDriver-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		C948D5D41CAE31AB001CE8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33BFB9A919404C259C2DF56C /* Pods-YuQinDriver.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hengxin Chen (SA3PMJF59D)";
+				DEVELOPMENT_TEAM = SA3PMJF59D;
+				INFOPLIST_FILE = YuQinDriver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuqin.YuQinDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5586a977-fec9-46a3-b869-227c1238275e";
+				PROVISIONING_PROFILE_SPECIFIER = "YuQinDriver-Distribution";
+				SWIFT_OBJC_BRIDGING_HEADER = "YuQinDriver/YuQinDriver-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		C948D5D61CAE31AB001CE8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YuQinDriverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuqin.YuQinDriverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YuQinDriver.app/YuQinDriver";
+			};
+			name = Debug;
+		};
+		C948D5D71CAE31AB001CE8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YuQinDriverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuqin.YuQinDriverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YuQinDriver.app/YuQinDriver";
+			};
+			name = Release;
+		};
+		C948D5D91CAE31AB001CE8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YuQinDriverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuqin.YuQinDriverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = YuQinDriver;
+			};
+			name = Debug;
+		};
+		C948D5DA1CAE31AB001CE8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YuQinDriverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuqin.YuQinDriverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = YuQinDriver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C948D5A51CAE31AA001CE8AC /* Build configuration list for PBXProject "YuQinDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C948D5D01CAE31AB001CE8AC /* Debug */,
+				C948D5D11CAE31AB001CE8AC /* Release */,
+				C91AEC961D7929F6008892ED /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C948D5D21CAE31AB001CE8AC /* Build configuration list for PBXNativeTarget "YuQinDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C948D5D31CAE31AB001CE8AC /* Debug */,
+				C948D5D41CAE31AB001CE8AC /* Release */,
+				C91AEC971D7929F6008892ED /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C948D5D51CAE31AB001CE8AC /* Build configuration list for PBXNativeTarget "YuQinDriverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C948D5D61CAE31AB001CE8AC /* Debug */,
+				C948D5D71CAE31AB001CE8AC /* Release */,
+				C91AEC981D7929F6008892ED /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C948D5D81CAE31AB001CE8AC /* Build configuration list for PBXNativeTarget "YuQinDriverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C948D5D91CAE31AB001CE8AC /* Debug */,
+				C948D5DA1CAE31AB001CE8AC /* Release */,
+				C91AEC991D7929F6008892ED /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C948D5A21CAE31AA001CE8AC /* Project object */;
+}
