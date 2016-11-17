@@ -133,7 +133,10 @@ public class UrlConnection {
         Alamofire.request(.GET, url)
             .responseJSON { response in
                 
-                print("\(self.action) request: \(response.request)")
+                #if DEBUG
+                    // 开发环境
+                    print("\(self.action) request: \(response.request)")
+                #endif
                 
                 if showLoadingAnimation {
                     //取消等待动画
@@ -142,7 +145,11 @@ public class UrlConnection {
                 
                 switch (response.result) {
                 case .Success(let value):
-                    print("\(self.action) result: \(value)")
+                    
+                    #if DEBUG
+                        // 开发环境
+                        print("\(self.action) result: \(value)")
+                    #endif
                     if let status = value["status"] as? String {
                         if status == UNAUTHORIZED {
                             print("\(url) 无权限")
@@ -154,7 +161,10 @@ public class UrlConnection {
                         successCallBack(value)
                     }
                 case .Failure(let error):
-                    print("\(self.action) error: \(error)")
+                    #if DEBUG
+                        // 开发环境
+                        print("\(self.action) error: \(error)")
+                    #endif
                     failureCallBack(error)
                 }
         }
