@@ -78,6 +78,7 @@
 		6D402C6121256030A7CA729B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC19D55C76074F1E619F442 /* Pods-YuQinDriver.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuQinDriver.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-YuQinDriver/Pods-YuQinDriver.distribution.xcconfig"; sourceTree = "<group>"; };
 		9E9750B4B23EC2AF374D3CF1 /* Pods-YuQinDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuQinDriver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YuQinDriver/Pods-YuQinDriver.debug.xcconfig"; sourceTree = "<group>"; };
+		C9073CC21DDF442E00E4A172 /* YuQinDriver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YuQinDriver.entitlements; sourceTree = "<group>"; };
 		C94825091DC0E20200B4782B /* ChooseCompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCompanyViewController.swift; sourceTree = "<group>"; };
 		C948250B1DC1888B00B4782B /* UrlConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlConnection.swift; sourceTree = "<group>"; };
 		C948D5AA1CAE31AB001CE8AC /* YuQinDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuQinDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +204,7 @@
 		C948D5AC1CAE31AB001CE8AC /* YuQinDriver */ = {
 			isa = PBXGroup;
 			children = (
+				C9073CC21DDF442E00E4A172 /* YuQinDriver.entitlements */,
 				C97164281CBB6C4700437242 /* Reachability */,
 				C948D5E81CAE3561001CE8AC /* BusinessLogicLayer */,
 				C948D5E31CAE3503001CE8AC /* PersistenceLayer */,
@@ -424,6 +426,11 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = SA3PMJF59D;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					C948D5BD1CAE31AB001CE8AC = {
 						CreatedOnToolsVersion = 7.3;
@@ -673,6 +680,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YuQinDriver/YuQinDriver.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hengxin Chen (SA3PMJF59D)";
 				DEVELOPMENT_TEAM = SA3PMJF59D;
@@ -815,6 +823,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YuQinDriver/YuQinDriver.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hengxin Chen (4Z87G7B2U8)";
 				INFOPLIST_FILE = YuQinDriver/Info.plist;
@@ -835,6 +844,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YuQinDriver/YuQinDriver.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hengxin Chen (SA3PMJF59D)";
 				DEVELOPMENT_TEAM = SA3PMJF59D;
