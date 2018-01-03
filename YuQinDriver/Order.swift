@@ -39,7 +39,7 @@ public class Order: NSObject, NSCoding {
     public var fromLongitude: Double?
     //起点latitude
     public var fromLatitude: Double?
-    //终点
+    //下车地点
     public var toAddress: Address?
     //终点longitude
     public var toLongitude: Double?
@@ -63,6 +63,22 @@ public class Order: NSObject, NSCoding {
     public var orderStatus: OrderStatus?
     //sn
     public var sn: String?
+    //目的地
+    public var destination: String?
+    //客户要求
+    public var customerDemo: String?
+    //油费
+    public var refuelMoney: String?
+    //洗车费
+    public var washingMoney: String?
+    //停车费
+    public var parkingFee: String?
+    //过路费
+    public var toll: String?
+    //食宿
+    public var roomAndBoardFee: String?
+    //其他费用
+    public var otherFee: String?
     
     public override init() {
         super.init()
@@ -87,6 +103,14 @@ public class Order: NSObject, NSCoding {
         aCoder.encodeObject(chargeMode?.rawValue, forKey: "chargeMode")
         aCoder.encodeObject(orderStatus?.rawValue, forKey: "orderStatus")
         aCoder.encodeObject(sn, forKey: "sn")
+        aCoder.encodeObject(destination, forKey: "destination")
+        aCoder.encodeObject(customerDemo, forKey: "customerDemo")
+        aCoder.encodeObject(refuelMoney, forKey: "refuelMoney")
+        aCoder.encodeObject(washingMoney, forKey: "washingMoney")
+        aCoder.encodeObject(parkingFee, forKey: "parkingFee")
+        aCoder.encodeObject(toll, forKey: "toll")
+        aCoder.encodeObject(roomAndBoardFee, forKey: "roomAndBoardFee")
+        aCoder.encodeObject(otherFee, forKey: "otherFee")
     }
     public required init?(coder aDecoder: NSCoder) {
         self.orderId = aDecoder.decodeObjectForKey("orderId") as? Int
@@ -106,6 +130,14 @@ public class Order: NSObject, NSCoding {
         self.chargeMode = ChargeMode(rawValue: aDecoder.decodeObjectForKey("chargeMode") as! String)
         self.orderStatus = OrderStatus(rawValue: aDecoder.decodeObjectForKey("orderStatus") as! String)
         self.sn = aDecoder.decodeObjectForKey("sn") as? String
+        self.destination = aDecoder.decodeObjectForKey("destination") as? String
+        self.customerDemo = aDecoder.decodeObjectForKey("customerDemo") as? String
+        self.refuelMoney = aDecoder.decodeObjectForKey("refuelMoney") as? String
+        self.washingMoney = aDecoder.decodeObjectForKey("washingMoney") as? String
+        self.parkingFee = aDecoder.decodeObjectForKey("parkingFee") as? String
+        self.toll = aDecoder.decodeObjectForKey("toll") as? String
+        self.roomAndBoardFee = aDecoder.decodeObjectForKey("roomAndBoardFee") as? String
+        self.otherFee = aDecoder.decodeObjectForKey("otherFee") as? String
     }
 }
 

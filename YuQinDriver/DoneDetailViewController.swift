@@ -96,7 +96,7 @@ class DoneDetailViewController: UIViewController, UITableViewDataSource, UITable
             if self.doneOrder!.chargeMode!.rawValue == Order.CHARGE_MODE_DICT["MILE"] {
                 
                 var dict7 = Dictionary<String, String>()
-                dict7["label1"] = "目的地"
+                dict7["label1"] = "下车地点"
                 dict7["label2"] = doneOrder.toAddress?.briefDescription
                 dataList.append(dict7)
             }
@@ -117,6 +117,36 @@ class DoneDetailViewController: UIViewController, UITableViewDataSource, UITable
                 dict9["label2"] = Utility.sharedInstance.stringFromDate(endDate, orderType: self.doneOrder!.chargeMode!.rawValue)
             }
             dataList.append(dict9)
+            
+            var dict10 = Dictionary<String, String>()
+            dict10["label1"] = "油费"
+            dict10["label2"] = doneOrder.refuelMoney
+            dataList.append(dict10)
+            
+            var dict11 = Dictionary<String, String>()
+            dict11["label1"] = "洗车费"
+            dict11["label2"] = doneOrder.washingMoney
+            dataList.append(dict11)
+            
+            var dict12 = Dictionary<String, String>()
+            dict12["label1"] = "停车费"
+            dict12["label2"] = doneOrder.parkingFee
+            dataList.append(dict12)
+            
+            var dict13 = Dictionary<String, String>()
+            dict13["label1"] = "过路费"
+            dict13["label2"] = doneOrder.toll
+            dataList.append(dict13)
+            
+            var dict14 = Dictionary<String, String>()
+            dict14["label1"] = "食宿费"
+            dict14["label2"] = doneOrder.roomAndBoardFee
+            dataList.append(dict14)
+            
+            var dict15 = Dictionary<String, String>()
+            dict15["label1"] = "其他费用"
+            dict15["label2"] = doneOrder.otherFee
+            dataList.append(dict15)
             
             tableView.reloadData()
         }

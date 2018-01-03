@@ -177,8 +177,21 @@ public class Utility: NSObject {
         if let sn = jsonDict["sn"] as? String {
             order.sn = sn
         }
+        if let chargeMode = jsonDict["chargeMode"] as? String {
+            
+            order.chargeMode = Order.ChargeMode(rawValue: Order.CHARGE_MODE_DICT[chargeMode]!)
+        }
+        if let customerName = jsonDict["customerName"] as? String {
+            
+            order.customerName = customerName
+        }
         if let customerOrganization = jsonDict["customerOrganization"] as? String {
+            
             order.customerOrganization = customerOrganization
+        }
+        if let customerPhoneNum = jsonDict["customerPhone"] as? String {
+            
+            order.customerPhoneNum = customerPhoneNum
         }
         
         //起始地址
@@ -187,101 +200,15 @@ public class Utility: NSObject {
             fromAddress.briefDescription = fromAddressDescription
             order.fromAddress = fromAddress
         }
-//        if let fromAddressDict = jsonDict["fromAddress"] as? NSDictionary {
-//            
-//            let fromAddress = Address()
-//            if let createTime = fromAddressDict["createTime"] as? Double {
-//                
-//                fromAddress.createTime = getNSDateFromTimestampWithMSPrecision(createTime)
-//            }
-//            if let lastUpdateTime = fromAddressDict["lastUpdateTime"] as? Double {
-//                
-//                fromAddress.lastUpdateTime = getNSDateFromTimestampWithMSPrecision(lastUpdateTime)
-//            }
-//            if let description = fromAddressDict["description"] as? String {
-//                
-//                fromAddress.briefDescription = description
-//            }
-//            if let detail = fromAddressDict["detail"] as? String {
-//                
-//                fromAddress.detail = detail
-//            }
-//            if let id = fromAddressDict["id"] as? Int {
-//            
-//                fromAddress.id = id
-//            }
-//            
-//            let fromAddressLocation = Location()
-//            if let fromLocationDict = fromAddressDict["location"] as? NSDictionary {
-//            
-//                fromAddressLocation.id = fromLocationDict["id"] as? Int
-//                fromAddressLocation.latitude = fromLocationDict["latitude"] as? Double
-//                fromAddressLocation.longitude = fromLocationDict["longitude"] as? Double
-//            }
-//            
-//            fromAddress.location = fromAddressLocation
-//            order.fromAddress = fromAddress
-//        }
-//        
-//        if let fromLatitude = jsonDict["fromLatitude"] as? Double {
-//            
-//            order.fromLatitude = fromLatitude
-//        }
-//        if let fromLongitude = jsonDict["fromLongitude"] as? Double {
-//            
-//            order.fromLongitude = fromLongitude
-//        }
+
         
-        //目的地址
+        //下车地点
         if let toAddressDescription = jsonDict["toAddress"] as? String {
             let toAddress = Address()
             toAddress.briefDescription = toAddressDescription
             order.toAddress = toAddress
         }
-//        if let toAddressDict = jsonDict["toAddress"] as? NSDictionary {
-//            
-//            let toAddress = Address()
-//            if let createTime = toAddressDict["createTime"] as? Double {
-//            
-//                toAddress.createTime = getNSDateFromTimestampWithMSPrecision(createTime)
-//            }
-//            if let lastUpdateTime = toAddressDict["lastUpdateTime"] as? Double {
-//                
-//                toAddress.lastUpdateTime = getNSDateFromTimestampWithMSPrecision(lastUpdateTime)
-//            }
-//            if let description = toAddressDict["description"] as? String {
-//            
-//                toAddress.briefDescription = description
-//            }
-//            if let detail = toAddressDict["detail"] as? String {
-//            
-//                toAddress.detail = detail
-//            }
-//            if let id = toAddressDict["id"] as? Int {
-//            
-//                toAddress.id = id
-//            }
-//            
-//            let toAddressLocation = Location()
-//            if let toLocationDict = toAddressDict["location"] as? NSDictionary {
-//            
-//                toAddressLocation.id = toLocationDict["id"] as? Int
-//                toAddressLocation.latitude = toLocationDict["latitude"] as? Double
-//                toAddressLocation.longitude = toLocationDict["longitude"] as? Double
-//            }
-//            
-//            toAddress.location = toAddressLocation
-//            order.toAddress = toAddress
-//        }
-//        
-//        if let toLatitude = jsonDict["toLatitude"] as? Double {
-//            
-//            order.toLatitude = toLatitude
-//        }
-//        if let toLongitude = jsonDict["toLongitude"] as? Double {
-//            
-//            order.toLongitude = toLongitude
-//        }
+
         
         if let date = jsonDict["planBeginDate"] as? Double {
             
@@ -299,23 +226,43 @@ public class Utility: NSObject {
             
             order.actualEndDate = getNSDateFromTimestampWithMSPrecision(date)
         }
-        
-        if let customerName = jsonDict["customerName"] as? String {
-            
-            order.customerName = customerName
-        }
-        if let customerPhoneNum = jsonDict["customerPhone"] as? String {
-            
-            order.customerPhoneNum = customerPhoneNum
-        }
-        
-        if let chargeMode = jsonDict["chargeMode"] as? String {
-            
-            order.chargeMode = Order.ChargeMode(rawValue: Order.CHARGE_MODE_DICT[chargeMode]!)
-        }
+
         if let orderStatus = jsonDict["status"] as? String {
             
             order.orderStatus = Order.OrderStatus(rawValue: orderStatus)
+        }
+        
+        if let destination = jsonDict["destination"] as? String {
+            
+            order.destination = destination
+        }
+        if let customerDemo = jsonDict["customerDemo"] as? String {
+            
+            order.customerDemo = customerDemo
+        }
+        if let refuelMoney = jsonDict["refuelMoney"] as? String {
+            
+            order.refuelMoney = refuelMoney
+        }
+        if let washingMoney = jsonDict["washingMoney"] as? String {
+            
+            order.washingMoney = washingMoney
+        }
+        if let parkingFee = jsonDict["parkingFee"] as? String {
+            
+            order.parkingFee = parkingFee
+        }
+        if let toll = jsonDict["toll"] as? String {
+            
+            order.toll = toll
+        }
+        if let roomAndBoardFee = jsonDict["roomAndBoardFee"] as? String {
+            
+            order.roomAndBoardFee = roomAndBoardFee
+        }
+        if let otherFee = jsonDict["otherFee"] as? String {
+            
+            order.otherFee = otherFee
         }
         
         return order
@@ -467,7 +414,7 @@ public class Utility: NSObject {
             return
         }
         
-        let urlConnection = UrlConnection(action: "user_updateDeviceToken.action")
+        let urlConnection = UrlConnection(action: "order_updateDeviceToken.action")
         let parameters = ["deviceType" : "ios", "deviceToken" : newDeviceToken!]
         urlConnection.request(urlConnection.assembleUrl(parameters), successCallBack: { value in
             if let status = value["status"] as? Bool  {

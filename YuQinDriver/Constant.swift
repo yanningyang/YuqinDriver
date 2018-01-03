@@ -24,10 +24,10 @@ public class Constant {
     /// MARK -- 接口地址
     #if DEBUG
     // 开发环境
-    public static let HOST_NAME = "http://101.201.31.147"
+    public static let HOST_NAME = "https://www.cquchx.cn:8443"
     #else
     // 生产环境
-    public static let HOST_NAME = "http://oa.yuqinqiche.com"
+    public static let HOST_NAME = "https://oa.yuqinqiche.com:8443"
     #endif
     
     public static let HOST_PATH = HOST_NAME + "/app"
@@ -63,5 +63,5 @@ public class Constant {
     public static let ShowSignatureSegueIdentifier = "ShowSignatureSegueIdentifier"
     public static let ShowOtherExpenditureSegueIdentifier = "ShowOtherExpenditureSegueIdentifier"
     
-    public static let APP_UPDATE_DETAILS = "1. 进行了APP对渝勤业务系统的平台化改造；2. 新增了版本更新说明。"
+    public static let APP_UPDATE_DETAILS = "使用加密通道HTTPS传送数据"
 }

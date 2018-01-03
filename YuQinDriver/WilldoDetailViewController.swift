@@ -99,7 +99,7 @@ class WilldoDetailViewController: UIViewController, UITableViewDataSource, UITab
             if self.toDoOrder!.chargeMode!.rawValue == Order.CHARGE_MODE_DICT["MILE"] {
                 
                 var dict7 = Dictionary<String, String>()
-                dict7["label1"] = "目的地"
+                dict7["label1"] = "下车地点"
                 dict7["label2"] = toDoOrder.toAddress?.briefDescription
                 dataList.append(dict7)
             }
@@ -120,6 +120,16 @@ class WilldoDetailViewController: UIViewController, UITableViewDataSource, UITab
                 }
                 dataList.append(dict9)
             }
+            
+            var dict10 = Dictionary<String, String>()
+            dict10["label1"] = "用户要求"
+            dict10["label2"] = toDoOrder.customerDemo
+            dataList.append(dict10)
+            
+            var dict11 = Dictionary<String, String>()
+            dict11["label1"] = "目的地"
+            dict11["label2"] = toDoOrder.destination
+            dataList.append(dict11)
             
             tableView.reloadData()
             
